@@ -7,13 +7,15 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
-public class PersonDataSubmission {
-	WebDriver driver;
+import BaseClass.PageFact;
+
+public class PersonDataSubmission extends PageFact {
+	
 	public PersonDataSubmission(WebDriver driver)
 	{
-		this.driver=driver;
-		PageFactory.initElements(driver,this);
+		super(driver);
 	}
+	
 	//By b=driver.findElement(By.id("name"));
 	//driver1.findElement(By.id("name"));
 	//By name=By.id("name");

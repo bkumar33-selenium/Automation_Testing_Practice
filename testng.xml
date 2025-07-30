@@ -6,4 +6,5 @@
       <class name="TestCases.EnterNameIn"/>
     </classes>
   </test> <!-- Test -->
+  
 </suite> <!-- Suite -->

@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-21T20:44:19 IST" name="Suite" finished-at="2025-07-21T20:44:26 IST" duration-ms="7642">
+  <suite started-at="2025-07-30T19:30:11 IST" name="Default suite" finished-at="2025-07-30T19:30:19 IST" duration-ms="7179">
     <groups>
     </groups>
-    <test started-at="2025-07-21T20:44:19 IST" name="Test" finished-at="2025-07-21T20:44:26 IST" duration-ms="7642">
-      <class name="TestCases.EnterNameIn">
-        <test-method signature="drive()[pri:0, instance:TestCases.EnterNameIn@515c6049]" started-at="2025-07-21T20:44:19 IST" name="drive" finished-at="2025-07-21T20:44:26 IST" duration-ms="6768" status="PASS">
+    <test started-at="2025-07-30T19:30:11 IST" name="Default test" finished-at="2025-07-30T19:30:19 IST" duration-ms="7179">
+      <class name="TestCases.TestAutoPrac_EnterPersonalDetails">
+        <test-method signature="drive()[pri:0, instance:TestCases.TestAutoPrac_EnterPersonalDetails@7c7a06ec]" started-at="2025-07-30T19:30:11 IST" name="drive" finished-at="2025-07-30T19:30:18 IST" duration-ms="6120" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- drive -->
-        <test-method signature="RunName()[pri:0, instance:TestCases.EnterNameIn@515c6049]" started-at="2025-07-21T20:44:26 IST" name="RunName" finished-at="2025-07-21T20:44:26 IST" duration-ms="816" status="PASS">
+        <test-method signature="RunName()[pri:0, instance:TestCases.TestAutoPrac_EnterPersonalDetails@7c7a06ec]" started-at="2025-07-30T19:30:18 IST" name="RunName" finished-at="2025-07-30T19:30:19 IST" duration-ms="1006" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RunName -->
-      </class> <!-- TestCases.EnterNameIn -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- TestCases.TestAutoPrac_EnterPersonalDetails -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

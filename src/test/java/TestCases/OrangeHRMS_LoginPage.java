@@ -16,7 +16,7 @@ public class OrangeHRMS_LoginPage extends OrangeHRMS_BrowserSetup {
 		OrangeLoginElements_Actions po=new OrangeLoginElements_Actions(driver);
 	   System.out.println(driver.getTitle());
 	   
-	  Thread.sleep(300);
+	 // Thread.sleep(300);
 	   //po.login(prop.getProperty("user"));
 	   //po.password(prop.getProperty("password"));
 	   po.login(user);

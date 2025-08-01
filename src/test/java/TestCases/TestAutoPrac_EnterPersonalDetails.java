@@ -14,8 +14,9 @@ public class TestAutoPrac_EnterPersonalDetails extends TestAutoPrac_BrowserSetup
 		perd.EnterEmail(prop.getProperty("email"));
 		perd.EnterPhone(prop.getProperty("phone"));
 		perd.EnterAddress(prop.getProperty("Address"));
-		Thread.sleep(500);
-		driver.close();
+		perd.clickOnRadioButton();
+		//Thread.sleep(500);
+		//driver.close();
 	}
 
 }

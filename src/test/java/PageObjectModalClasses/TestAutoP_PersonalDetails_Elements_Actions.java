@@ -21,6 +21,7 @@ public class TestAutoP_PersonalDetails_Elements_Actions extends PageFactoryDecla
 		@FindBy(xpath="//input[@placeholder='Enter EMail']") WebElement eml;
 		@FindBy(xpath="//input[@placeholder='Enter Phone']") WebElement epn;
 		@FindBy(xpath="//div[@class='form-group']//textarea") WebElement eadr;
+		@FindBy(xpath="//input[@id='male']") WebElement radbm;
 		@FindBy(xpath="//select[@id='country']") List<WebElement> dDL;
 		
 		public void EnterName(String name)
@@ -50,6 +51,10 @@ public class TestAutoP_PersonalDetails_Elements_Actions extends PageFactoryDecla
 		{
 			
 			eadr.sendKeys(adress);
+		}
+		public void clickOnRadioButton()
+		{
+			radbm.click();
 		}
 
 	}

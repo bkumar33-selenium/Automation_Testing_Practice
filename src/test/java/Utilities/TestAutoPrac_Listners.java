@@ -18,8 +18,9 @@ public class TestAutoPrac_Listners implements ITestListener{
 	{
 		extent.attachReporter(report);
 		
-		Status s=test.getStatus();
-		System.out.println(s);
+		//Status s=test.getStatus();
+		//System.out.println(s);
+		test.getExtent();
 		extent.flush();
 		
 	}

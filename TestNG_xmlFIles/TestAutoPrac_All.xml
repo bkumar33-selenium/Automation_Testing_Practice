@@ -5,12 +5,17 @@
 <listener class-name="Utilities.TestAutoPrac_Listners"/>
 </listeners>
   <test thread-count="5" name="RunEnterPersondetails_class">
-<parameter name="name" value="Prashanth kumar"/>
-<parameter name="email" value="Prashanth.gmail.com"/>
+
     <classes>
       <class name="TestCases.TestAutoPrac_EnterPersonalDetails"/>
     </classes>
   </test> <!-- Test -->
     
+  <test name="Run Display countries_class">
+  
+  <classes>
+  <class name="TestCases.TestAutoPrac_DisplayCountryNames"/>  
+  </classes>
+  </test>
   
 </suite> <!-- Suite -->

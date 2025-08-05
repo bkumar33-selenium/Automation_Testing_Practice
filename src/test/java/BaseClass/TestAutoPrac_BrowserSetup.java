@@ -29,14 +29,14 @@ public class TestAutoPrac_BrowserSetup {
 	     prop.load(fl);
 			driver=new ChromeDriver();
 			driver.get("https://testautomationpractice.blogspot.com/");	
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 			driver.manage().window().maximize();
 			
 		    // driver.findElement(By.id("name"));
 		     
 
 		}
-	@AfterClass
+	//@AfterClass
 	 public void tearDown()
 	 {
 		 driver.close();

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="Utilities.TestAutoPrac_Listners"/>
+</listeners>
+    
+  <test name="Run Display countries_class">  
+  <classes>
+  <class name="TestCases.TestAutoPrac_DisplayCountryNames"/>  
+  </classes>
+  </test>
+
+</suite> <!-- Suite -->

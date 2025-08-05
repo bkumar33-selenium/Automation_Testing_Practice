@@ -4,14 +4,16 @@
   <listeners>
     <listener class-name="Utilities.TestAutoPrac_Listners"/>
   </listeners>
-  <test thread-count="5" name="Run Orange HRMS Login(failed)">
+  <test thread-count="5" name="RunEnterPersondetails_class(failed)">
+    <parameter name="name" value="Prashanth kumar"/>
+    <parameter name="email" value="Prashanth.gmail.com"/>
     <classes>
-      <class name="TestCases.OrangeHRMS_LoginPage">
+      <class name="TestCases.TestAutoPrac_EnterPersonalDetails">
         <methods>
           <include name="tearDown"/>
-          <include name="Login" invocation-numbers="0 1"/>
+          <include name="Colors"/>
         </methods>
-      </class> <!-- TestCases.OrangeHRMS_LoginPage -->
+      </class> <!-- TestCases.TestAutoPrac_EnterPersonalDetails -->
     </classes>
-  </test> <!-- Run Orange HRMS Login(failed) -->
+  </test> <!-- RunEnterPersondetails_class(failed) -->
 </suite> <!-- Failed suite [Suite] -->

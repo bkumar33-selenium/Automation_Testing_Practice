@@ -5,6 +5,7 @@ import java.util.List;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.Select;
 
 import BaseClass.PageFactoryDeclaration;
 
@@ -23,6 +24,8 @@ public class TestAutoP_PersonalDetails_Elements_Actions extends PageFactoryDecla
 		@FindBy(xpath="//div[@class='form-group']//textarea") WebElement eadr;
 		@FindBy(xpath="//input[@id='male']") WebElement radbm;
 		@FindBy(xpath="//select[@id='country']") List<WebElement> dDL;
+		@FindBy(xpath="//div[@class='form-check form-check-inline']//input[@value='sunday']") WebElement dys;
+		@FindBy(xpath="//select[@id='colors']") WebElement col; 
 		
 		public void EnterName(String name)
 		{
@@ -55,6 +58,15 @@ public class TestAutoP_PersonalDetails_Elements_Actions extends PageFactoryDecla
 		public void clickOnRadioButton()
 		{
 			radbm.click();
+		}
+		public void SelectDays()
+		{
+			dys.click();
+		}
+		public void SelectColors()
+		{
+			Select s=new Select(col);
+			s.selectByValue("green");
 		}
 
 	}

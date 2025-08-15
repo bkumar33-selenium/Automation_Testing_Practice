@@ -1,9 +1,13 @@
 package PageObjectModalClasses;
 
+import java.io.File;
 import java.util.List;
 
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
@@ -26,6 +30,7 @@ public class TestAutoP_PersonalDetails_Elements_Actions extends PageFactoryDecla
 		@FindBy(xpath="//select[@id='country']") List<WebElement> dDL;
 		@FindBy(xpath="//div[@class='form-check form-check-inline']//input[@value='sunday']") WebElement dys;
 		@FindBy(xpath="//select[@id='colors']") WebElement col; 
+		@FindBy(xpath="//div[@class='fauxborder-left header-fauxborder-left']") WebElement prnt;
 		
 		public void EnterName(String name)
 		{
@@ -34,6 +39,11 @@ public class TestAutoP_PersonalDetails_Elements_Actions extends PageFactoryDecla
 		}
 		public void countiesList()
 		{
+			/* TakesScreenshot tk=(TakesScreenshot) driver;
+			 File sourcefile=prnt.getScreenshotAs(OutputType.FILE);
+			 String path=System.getProperty("user.dir")+"\\Screenshots\\screenshot.png";
+			 File targetfile=new File(path);
+			 sourcefile.renameTo(targetfile);*/
 				
 			for(int i=0;i<dDL.size();i++)
 			{
@@ -57,7 +67,10 @@ public class TestAutoP_PersonalDetails_Elements_Actions extends PageFactoryDecla
 		}
 		public void clickOnRadioButton()
 		{
-			radbm.click();
+			Actions act=new Actions(driver);
+			//act.contextClick(radbm).perform();
+			act.doubleClick(radbm).perform();
+			//radbm.click();
 		}
 		public void SelectDays()
 		{

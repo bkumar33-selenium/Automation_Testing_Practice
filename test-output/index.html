@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Workspace1-CoreJava\Automation_Testing_Practice\TestNG_xmlFIles\EnterpersonalDetails.xml</span>
+                    <span>C:\Workspace1-CoreJava\Automation_Testing_Practice\TestNG_xmlFIles\Login_Multiple_TutorialsNinja.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.Login_TutorialsNinja" class="method navigator-link" hash-for-method="login(prashanth.wm123@mail.com, T123pc1)">login(prashanth.wm123@mail.com, T123pc1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.Login_TutorialsNinja" class="method navigator-link" hash-for-method="login(prashanth.wm123@gmail.com, T123pc1)">login(prashanth.wm123@gmail.com, T123pc1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,22 +122,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestCases.TestAutoPrac_EnterPersonalDetails" class="method navigator-link" hash-for-method="Colors">Colors</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestCases.TestAutoPrac_EnterPersonalDetails" class="method navigator-link" hash-for-method="Days">Days</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestCases.TestAutoPrac_EnterPersonalDetails" class="method navigator-link" hash-for-method="RunName(Prashanth kumar, Prashanth.gmail.com)">RunName(Prashanth kumar, Prashanth.gmail.com)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestCases.TestAutoPrac_EnterPersonalDetails" class="method navigator-link" hash-for-method="drive">drive</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="TestCases.Login_TutorialsNinja" class="method navigator-link" hash-for-method="login(prashanth.wm123@mail.com, T123pc1)">login(prashanth.wm123@mail.com, T123pc1)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -133,39 +137,96 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">TestCases.TestAutoPrac_EnterPersonalDetails</span>
+              <img src="failed.png"/>
+              <span class="class-name">TestCases.Login_TutorialsNinja</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Colors">
-                  </a> <!-- Colors -->
-                  <span class="method-name">Colors</span>
+                  <a name="login(prashanth.wm123@mail.com, T123pc1)">
+                  </a> <!-- login(prashanth.wm123@mail.com, T123pc1) -->
+                  <span class="method-name">login</span>
+                  <span class="parameters">(prashanth.wm123@mail.com,T123pc1)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [83efbbcc4f8b2f3cec104c397f367ce6, findElement {value=input-email, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.67, chrome: {chromedriverVersion: 139.0.7258.68 (40ff94600b6e..., userDataDir: C:\Users\B3C05~1.PRA\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61849}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61849/devtoo..., se:cdpVersion: 139.0.7258.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 83efbbcc4f8b2f3cec104c397f367ce6
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.sendKeys(Unknown Source)
+	at PageObjectModalClasses.TutorialsNinja_Login_elements_Actions.login(TutorialsNinja_Login_elements_Actions.java:52)
+	at TestCases.Login_TutorialsNinja.login(Login_TutorialsNinja.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Days">
-                  </a> <!-- Days -->
-                  <span class="method-name">Days</span>
+                  <a name="login(prashanth.wm123@gmail.com, T123pc1)">
+                  </a> <!-- login(prashanth.wm123@gmail.com, T123pc1) -->
+                  <span class="method-name">login</span>
+                  <span class="parameters">(prashanth.wm123@gmail.com,T123pc1)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
+from disconnected: unable to send message to renderer
+  (Session info: chrome=139.0.7258.67)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [83efbbcc4f8b2f3cec104c397f367ce6, findElement {value=input-email, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.67, chrome: {chromedriverVersion: 139.0.7258.68 (40ff94600b6e..., userDataDir: C:\Users\B3C05~1.PRA\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61849}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61849/devtoo..., se:cdpVersion: 139.0.7258.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 83efbbcc4f8b2f3cec104c397f367ce6
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.clear(Unknown Source)
+	at PageObjectModalClasses.TutorialsNinja_Login_elements_Actions.clearlogin(TutorialsNinja_Login_elements_Actions.java:79)
+	at TestCases.Login_TutorialsNinja.login(Login_TutorialsNinja.java:31)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.Login_TutorialsNinja</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="RunName(Prashanth kumar, Prashanth.gmail.com)">
-                  </a> <!-- RunName(Prashanth kumar, Prashanth.gmail.com) -->
-                  <span class="method-name">RunName</span>
-                  <span class="parameters">(Prashanth kumar,Prashanth.gmail.com)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="drive">
-                  </a> <!-- drive -->
-                  <span class="method-name">drive</span>
+                  <a name="login(prashanth.wm123@mail.com, T123pc1)">
+                  </a> <!-- login(prashanth.wm123@mail.com, T123pc1) -->
+                  <span class="method-name">login</span>
+                  <span class="parameters">(prashanth.wm123@mail.com,T123pc1)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -173,23 +234,18 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Workspace1-CoreJava\Automation_Testing_Practice\TestNG_xmlFIles\EnterpersonalDetails.xml</span>
+            <span class="header-content">C:\Workspace1-CoreJava\Automation_Testing_Practice\TestNG_xmlFIles\Login_Multiple_TutorialsNinja.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;listeners&gt;
-    &lt;listener class-name=&quot;Utilities.TestAutoPrac_Listners&quot;/&gt;
-  &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;RunEnterPersondetails_class&quot;&gt;
-    &lt;parameter name=&quot;name&quot; value=&quot;Prashanth kumar&quot;/&gt;
-    &lt;parameter name=&quot;email&quot; value=&quot;Prashanth.gmail.com&quot;/&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;TestCases.TestAutoPrac_EnterPersonalDetails&quot;/&gt;
+      &lt;class name=&quot;TestCases.Login_TutorialsNinja&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- RunEnterPersondetails_class --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -201,7 +257,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">RunEnterPersondetails_class (1 class)</span>
+                <span class="test-name">Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -227,28 +283,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'drive')
-data.setCell(0, 2, 'TestCases.TestAutoPrac_EnterPersonalDetails')
-data.setCell(0, 3, 4342);
+data.setCell(0, 1, 'login')
+data.setCell(0, 2, 'TestCases.Login_TutorialsNinja')
+data.setCell(0, 3, 15074);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'RunName')
-data.setCell(1, 2, 'TestCases.TestAutoPrac_EnterPersonalDetails')
-data.setCell(1, 3, 372);
+data.setCell(1, 1, 'login')
+data.setCell(1, 2, 'TestCases.Login_TutorialsNinja')
+data.setCell(1, 3, 2071);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'Colors')
-data.setCell(2, 2, 'TestCases.TestAutoPrac_EnterPersonalDetails')
-data.setCell(2, 3, 173);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'Days')
-data.setCell(3, 2, 'TestCases.TestAutoPrac_EnterPersonalDetails')
-data.setCell(3, 3, 77);
+data.setCell(2, 1, 'login')
+data.setCell(2, 2, 'TestCases.Login_TutorialsNinja')
+data.setCell(2, 3, 522);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 17 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -274,23 +326,33 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">TestCases.TestAutoPrac_EnterPersonalDetails</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">drive</span>
+              <div class="chronological-class-name">TestCases.Login_TutorialsNinja</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">Browsersetup</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">login(prashanth.wm123@mail.com, T123pc1)</span>
+                <span class="method-start">1810 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">RunName(Prashanth kumar, Prashanth.gmail.com)</span>
-                <span class="method-start">4893 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">login(prashanth.wm123@gmail.com, T123pc1)</span>
+                <span class="method-start">3883 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">Days</span>
-                <span class="method-start">5280 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">login(prashanth.wm123@mail.com, T123pc1)</span>
+                <span class="method-start">18961 ms</span>
               </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Colors</span>
-                <span class="method-start">5372 ms</span>
-              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">19493 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

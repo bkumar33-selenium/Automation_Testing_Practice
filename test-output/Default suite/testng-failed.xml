@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestCases.OrangeHRMS_LoginPage">
+      <class name="TestCases.Login_TutorialsNinja">
         <methods>
-          <include name="Login" invocation-numbers="0 1"/>
+          <include name="Browsersetup"/>
+          <include name="login" invocation-numbers="1 2"/>
         </methods>
-      </class> <!-- TestCases.OrangeHRMS_LoginPage -->
+      </class> <!-- TestCases.Login_TutorialsNinja -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
